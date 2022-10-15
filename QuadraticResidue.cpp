@@ -14,5 +14,5 @@ int LegendreSymbolWithGauss(long long a, long long p) {
     else return -114514;
 }
 void LegendreSymbol(long long a, long long p) {
-    printf("LegendreSymbol (%lld/%lld) = %d\n", a, p, LegendreSymbolWithGauss(a, p));
+    printf("LegendreSymbol (%lld/%lld) = %d \n", a, p, LegendreSymbolWithGauss(a, p));
 }

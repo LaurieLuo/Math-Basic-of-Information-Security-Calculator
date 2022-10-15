@@ -1,6 +1,14 @@
 #include <iostream>
+#include <cmath>
+#include <cstdio>
+#include <cstring>
+#include <cstdlib>
+#include "header.h"
+int main(int argc, char *argv[]) {
+    if(argc < 3) {
+        usage();
+        exit(-1);
+    }
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
     return 0;
 }

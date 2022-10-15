@@ -4,7 +4,7 @@
 #include "ModOperations.cpp"
 int LegendreSymbolWithGauss(long long a, long long p) {
     //Using the way of Gauss.
-    long m = 0;
+    long long m = 0;
     if(!(a%p)) return 0;
     else if(gcd(a, p) == 1) {
         for(long long i = 1; i <= (p-1)/2; i++)

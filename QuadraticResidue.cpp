@@ -1,8 +1,8 @@
 //
 // Created by Laurie Luo on 10/15/22.
 //
-#include "ModOperations.cpp"
-#include <iostream>
+#include <cstdio>
+#include "header.h"
 int LegendreSymbolWithGauss(long long a, long long p) {
     //Using the way of Gauss.
     long long m = 0;
@@ -35,7 +35,7 @@ void BubbleSort(long a[], int f, int n) {
     }
 }
 void QuadraticResidueModP(long p) {
-    int i = 1, j = 0;
+    long i = 1, j = 0;
     long sr[200];
     int lsr = 0;
     while(((p+1)/2 != i) && p != 2) {
@@ -62,7 +62,7 @@ void QuadraticResidueModP(long p) {
         if(find)
             continue;
         else
-            printf("%d ", i);
+            printf("%ld ", i);
     }
     putchar('\n');
 }

@@ -3,6 +3,8 @@
 //
 #include <cstdio>
 #include <iostream>
+#include "header.h"
+
 void FastMod(long long base, long long index, long long m) {
     long long a = base, b = index;
     while(index) {
@@ -44,4 +46,46 @@ void GCD(long long a, long long b) {
 }
 void LCM(long long a, long long b) {
     printf("LCM(%lld, %lld) = %lld", a, b, lcm(a, b));
+}
+long long ModRespeatSquare(long long Base, long long Power, long long Mod){
+    int a = 1;
+    long long b = Base;
+    long long pp = Power;
+    std::cout << Power << "=";
+    int i = 0;
+    long long p = Power;
+    while (p >= 1) {
+        int n = p % 2;
+        p /= 2;
+        if (p != 0) {
+            std::cout << n << "*2^" << i << " + ";
+            i++;
+        }
+        else {
+            std::cout << n << " * 2^" << i << std::endl << std::endl;
+            i++;
+        }
+
+    }
+    int j = 0;
+    while (Power >= 1) {
+        int n = Power % 2;
+        Power /= 2;
+        std::cout << "n" << j << "=" << n << std::endl;
+        if (n) {
+            a = a * Base % Mod;
+        }
+        Base = Base * Base % Mod;
+        std::cout << "    a" << j << "=" << " a" << j - 1 << " * b" << j << " = " << a <<"(mod " << Mod<<")" << std::endl;
+        if (Power == 0) {
+            std::cout << std::endl;
+            std::cout << "    " << b << "^" << pp << " mod " << Mod << " = " << a << std::endl;
+            std::cout << "    >>>>>>  over!  <<<<<<" << std::endl;
+        }
+        else {
+            std::cout << "    b" << j + 1 << " = " << "b" << j << "^2 =" << Base << "(mod " << Mod << ")" << std::endl;
+        }
+        j++;
+    }
+    return a;
 }

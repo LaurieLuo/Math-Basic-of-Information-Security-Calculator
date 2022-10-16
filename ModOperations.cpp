@@ -47,6 +47,17 @@ void GCD(long long a, long long b) {
 void LCM(long long a, long long b) {
     printf("LCM(%lld, %lld) = %lld", a, b, lcm(a, b));
 }
+void Prime(long long n) {
+    bool prime = true;
+    long long i;
+    for(i = 2ll; i*i <= n; i++) {
+        if(prime%i == 0) {
+            prime = false;
+            break;
+        }
+    }
+    printf(prime ? "Prime!\n" : "Not Prime!\n");
+}
 long long ModRespeatSquare(long long Base, long long Power, long long Mod){
     int a = 1;
     long long b = Base;

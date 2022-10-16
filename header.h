@@ -15,6 +15,7 @@ long long lcm(long long a, long long b);
 void GCD(long long a, long long b);
 void LCM(long long a, long long b);
 long long ModRespeatSquare(long long Base, long long Power, long long Mod);
+void Prime(long long n);
 
 int LegendreSymbolWithGauss(long long a, long long p);
 void LegendreSymbol(long long a, long long p);

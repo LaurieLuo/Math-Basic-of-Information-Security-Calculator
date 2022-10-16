@@ -21,6 +21,8 @@ void logic(int argc, char *argv[]) {
         LCM(atoll(argv[2]), atoll(argv[3]));
     if (strcmp(argv[1], "mrs") == 0 and argc == 5)
         ModRespeatSquare(atoll(argv[2]), atoll(argv[3]), atoll(argv[4]));
+    if (strcmp(argv[1], "prm") == 0 and argc == 3)
+        Prime(atoll(argv[2]));
     // quadratic residue related
     if (strcmp(argv[1], "le") == 0 and argc == 4)
         LegendreSymbol(atoll(argv[2]), atoll(argv[3]));

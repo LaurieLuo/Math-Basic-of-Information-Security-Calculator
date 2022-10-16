@@ -44,11 +44,11 @@ void QuadraticResidueModP(long p) {
         i++;
     }
     BubbleSort(sr, 0, j);
-    printf("Square reminder: ");
+    printf("Quadratic residue: ");
     for(i = 0; i < j; i++)
         printf("%ld ", sr[i]);
     putchar('\n');
-    printf("Not Square reminder: ");
+    printf("Not quadratic residue: ");
     for(i = 2; i < p; i++) {
         bool find = false;
         int k = 0;

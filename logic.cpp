@@ -33,4 +33,6 @@ void logic(int argc, char *argv[]) {
         printEulerFx(atoll(argv[2]));
     if (strcmp(argv[1], "ordm") == 0 and argc == 3)
         OrdmAndRoot(atoll(argv[2]));
+    if (strcmp(argv[1], "root") == 0 and argc == 3)
+        RootofModm(atoll(argv[2]));
 }

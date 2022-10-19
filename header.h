@@ -26,4 +26,5 @@ void BezoutsIdentity(long long a, long long b);
 void OrdmAndRoot(long long m);
 long long EulerFx(long long a);
 void printEulerFx(long long a);
+void RootofModm(long long m);
 #endif //MATH_BASIC_OF_INFORMATION_SECURITY_CALCULATOR_HEADER_H

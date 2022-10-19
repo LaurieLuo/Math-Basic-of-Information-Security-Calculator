@@ -30,3 +30,6 @@ void OrdmAndRoot(long long m) {
         printf("\t%lld\t%d\n", i, pow);
     }
 }
+void RootofModm(long long m) {
+
+}

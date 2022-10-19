@@ -6,7 +6,7 @@
 #define MATH_BASIC_OF_INFORMATION_SECURITY_CALCULATOR_HEADER_H
 void usage();
 void logic(int argc, char *argv[]);
-
+//Basic algorithms
 void FastMod(long long base, long long index, long long m);
 void Mod(long long a, long long m);
 void InverseOfMod(long long a, long long p);

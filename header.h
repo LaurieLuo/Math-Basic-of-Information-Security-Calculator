@@ -22,4 +22,8 @@ void LegendreSymbol(long long a, long long p);
 void BubbleSort(long a[], int f, int n);
 void QuadraticResidueModP(long p);
 void BezoutsIdentity(long long a, long long b);
+
+void OrdmAndRoot(long long m);
+long long EulerFx(long long a);
+void printEulerFx(long long a);
 #endif //MATH_BASIC_OF_INFORMATION_SECURITY_CALCULATOR_HEADER_H

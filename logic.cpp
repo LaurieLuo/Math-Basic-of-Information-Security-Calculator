@@ -28,4 +28,9 @@ void logic(int argc, char *argv[]) {
         LegendreSymbol(atoll(argv[2]), atoll(argv[3]));
     if (strcmp(argv[1], "qr") == 0 and argc == 3)
         QuadraticResidueModP(atoll(argv[2]));
+
+    if (strcmp(argv[1], "euler") == 0 and argc == 3)
+        printEulerFx(atoll(argv[2]));
+    if (strcmp(argv[1], "ordm") == 0 and argc == 3)
+        OrdmAndRoot(atoll(argv[2]));
 }

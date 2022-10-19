@@ -16,4 +16,7 @@ void usage() {
     printf("\tQuadratic Residue algorithms:\n");
     printf("\t\t1. Calculate the Legendre Symbol of a and p (勒让德符号)----------------------- ./math ls a p\n");
     printf("\t\t2. Calculate the quadratic residue of mod p (模p的所有平方剩余和平方非剩余)------- ./math qr p\n");
+    printf("\tPrimitive Roots and Indicators:\n");
+    printf("\t\t1. Calculate the Euler Fx of a (欧拉函数)-------------------------------------- ./math euler a\n");
+    printf("\t\t2. Calculate the ormd(a) of m (计算m的所有指数)--------------------------------- ./math ordm p\n");
 }

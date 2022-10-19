@@ -42,10 +42,10 @@ long long lcm(long long a, long long b) {
     return a/gcd(a, b)*b;
 }
 void GCD(long long a, long long b) {
-    printf("GCD(%lld, %lld) = %lld", a, b, gcd(a, b));
+    printf("GCD(%lld, %lld) = %lld\n", a, b, gcd(a, b));
 }
 void LCM(long long a, long long b) {
-    printf("LCM(%lld, %lld) = %lld", a, b, lcm(a, b));
+    printf("LCM(%lld, %lld) = %lld\n", a, b, lcm(a, b));
 }
 void Prime(long long n) {
     bool prime = true;
